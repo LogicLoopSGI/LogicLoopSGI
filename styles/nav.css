@@ -1,11 +1,13 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.navbar{
+.navbar {
     border: 2px solid red;
 }
+
 @media screen and (min-width: 501px) {
     .navbar {
         display: flex;
@@ -13,44 +15,63 @@
         border: 2px solid red;
         height: 15vh;
     }
-    .nav-left{
+
+    .nav-left {
         height: 100%;
     }
+
     .nav-left-img {
         height: 100%;
     }
-    .nav-toggle{
+
+    .nav-toggle {
         display: none;
     }
 }
+
 @media screen and (max-width: 500px) {
-    .nav-left{
+    .nav-left {
         height: 100%;
     }
+
     .nav-left-img {
         height: 100%;
     }
 
     .navbar {
+        color: white;
+        height: 15vh;
         display: flex;
-        flex-direction: row;
-        height: 15vh; 
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
     }
 
     .nav-right {
-        display: none; 
+        display: none;
         width: 100%;
         text-align: center;
+        transition: all 0.5s ease;
+        position: absolute;
+        top: 15vh;
+        left: 0;
+        background-color: #333;
+        z-index: 1;
     }
 
     .nav-right-list {
         list-style: none;
-        background-color: #333; /* Background color for the side panel */
+        display: flex;
+        flex-direction: column;
+        transition: all 0.5s ease;
     }
 
     .nav-right-list-items {
-        color: white;
+        text-decoration: none;
+        width: 100%; /* Adjusted width to 100% */
+        padding: 10px; /* Added padding for better spacing */
         cursor: pointer;
+        transition: background-color 0.3s ease;
     }
 
     .nav-right-list-items:hover {
@@ -58,14 +79,16 @@
     }
 
     .nav-toggle {
-        display: block;
         width: 30px;
-        height: 30px;
-        background-color: #333;
-        color: white;
-        text-align: center;
-        font-size: 24px;
-        cursor: pointer;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease;
+    }
+
+    .nav-toggle-img {
+        height: 40%;
     }
 
     .nav-toggle:hover {
