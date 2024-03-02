@@ -1,4 +1,7 @@
-function toggleNav() {
-    var navRight = document.querySelector('.nav-right');
-    navRight.style.display = navRight.style.display === 'none' || navRight.style.display === '' ? 'block' : 'none';
-}
+function openNav() {
+    document.getElementById("mySidenav").style.width = "200px";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+  }
