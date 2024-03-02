@@ -5,15 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Logic Loop SGI</title>
     <link rel="shortcut icon" href="./Assets/Logo.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/nav.css">
 </head>
 <body>
     <div class="navbar">
-        <div class="nav-right">
-            <img src="" alt="">
-        </div>
         <div class="nav-left">
-
+                <img class="nav-left-img" src="./Assets/Symbol.jpg" alt="">
         </div>
+        <div class="nav-right">
+            <ul class="nav-right-list">
+                <li class="nav-right-list-items">Home</li>
+                <li class="nav-right-list-items">Events</li>
+                <li class="nav-right-list-items">Workshops</li>
+                <li class="nav-right-list-items">Management Team</li>
+                <li class="nav-right-list-items">About Us</li>
+                <li class="nav-right-list-items">Contact Us</li>
+            </ul>
+        </div>
+        <div class="nav-toggle" onclick="toggleNav()">&#9776;</div>
     </div>
+    <script src="./Scripts/sidePanel.js"></script>
 </body>
 </html>
