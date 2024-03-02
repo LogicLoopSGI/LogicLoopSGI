@@ -32,12 +32,13 @@
     }
 
     .navbar {
+        display: flex;
         flex-direction: row;
         height: 15vh; 
     }
 
     .nav-right {
-        display: none; /* Hide the left navigation initially for small screens */
+        display: none; 
         width: 100%;
         text-align: center;
     }
