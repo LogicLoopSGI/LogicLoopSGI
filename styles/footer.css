@@ -7,11 +7,12 @@
   width: 100%;
   background: #3586ff;
   min-height: 100px;
-  padding: 20px 50px;
+  padding: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  flex-wrap: nowrap;
 }
 
 .dev{
@@ -58,9 +59,10 @@
 
 .footer p {
   color: #fff;
-  margin: 15px 0 10px 0;
+  /* margin: 15px 0 10px 0; */
   font-size: 1.1rem;
   font-weight: bold;
+  text-align: center;
 }
 
 .wave {
