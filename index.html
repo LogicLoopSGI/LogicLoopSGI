@@ -5,54 +5,90 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logic Loop SGI</title>
     <link rel="shortcut icon" href="./Assets/Logo.jpg" type="image/x-icon" />
+    <link rel="stylesheet" href="./styles/body.css">
     <link rel="stylesheet" href="./styles/nav.css" />
+    <!-- <link rel="stylesheet" href="./styles/footer.css"> -->
   </head>
-  <body>
-    <div class="navigation">
-      <div class="navbar">
-        <div class="nav-left">
-          <img class="nav-left-img" src="./Assets/Symbol.jpg" alt="" />
+  <body class="bd">
+      <div class="navigation">
+        <div class="navbar">
+          <div class="nav-left">
+            <img class="nav-left-img" src="./Assets/Symbol.png" alt="" />
+          </div>
+          <div id="mySidenav" class="nav-right">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+              <img class="closebtn-img" src="./Assets/close.png" alt="" />
+            </a>
+            <ul class="nav-right-list">
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./index.html">Home</a>
+              </li>
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./Pages/event.html"
+                  >Events</a
+                >
+              </li>
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./Pages/workshops.html"
+                  >Workshops</a
+                >
+              </li>
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./Pages/team.html">Team</a>
+              </li>
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./Pages/about.html"
+                  >About Us</a
+                >
+              </li>
+              <li class="nav-right-list-items">
+                <a class="nav-right-list-items" href="./Pages/contact.html"
+                  >Contact Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="nav-toggle" onclick="openNav()">
+            <img class="nav-toggle-img" src="./Assets/ham.png" alt="" />
+          </div>
         </div>
-        <div id="mySidenav" class="nav-right">
-          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <img class="closebtn-img" src="./Assets/close.png" alt="" />
-          </a>
-          <ul class="nav-right-list">
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./index.html">Home</a>
-            </li>
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./Pages/event.html"
-                >Events</a
-              >
-            </li>
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./Pages/workshops.html"
-                >Workshops</a
-              >
-            </li>
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./Pages/team.html">Team</a>
-            </li>
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./Pages/about.html"
-                >About Us</a
-              >
-            </li>
-            <li class="nav-right-list-items">
-              <a class="nav-right-list-items" href="./Pages/contact.html"
-                >Contact Us</a
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="nav-toggle" onclick="openNav()">
-          <img class="nav-toggle-img" src="./Assets/ham.png" alt="" />
-        </div>
+        <div class="dash"></div>
       </div>
-      <div class="dash"></div>
-    </div>
 
+<!-- 
+      <div class="footer">
+        <footer class="footer">
+          <div class="waves">
+            <div class="wave" id="wave1"></div>
+            <div class="wave" id="wave2"></div>
+            <div class="wave" id="wave3"></div>
+            <div class="wave" id="wave4"></div>
+          </div>
+          <ul class="social-icon">
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-facebook"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-twitter"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a></li>
+            <li class="social-icon__item"><a class="social-icon__link" href="#">
+                <ion-icon name="logo-instagram"></ion-icon>
+              </a></li>
+          </ul>
+          <ul class="menu">
+            <li class="menu__item"><a class="menu__link" href="#">Home</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">About</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Services</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Team</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+      
+          </ul>
+          <p>&copy;2021 Nadine Coelho | All Rights Reserved</p>
+        </footer>
+      </div> -->
     <script src="./Scripts/sidePanel.js"></script>
   </body>
 </html>
