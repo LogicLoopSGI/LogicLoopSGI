@@ -5,112 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Logic Loop SGI</title>
     <link rel="shortcut icon" href="./Assets/Logo.jpg" type="image/x-icon" />
-    <link rel="stylesheet" href="./styles/body.css">
+    <link rel="stylesheet" href="./styles/body.css" />
     <link rel="stylesheet" href="./styles/nav.css" />
-    <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/contentHome.css">
+    <link rel="stylesheet" href="./styles/footer.css" />
+    <link rel="stylesheet" href="./styles/contentHome.css" />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body class="bd">
-      <div class="navigation">
-        <div class="navbar">
-          <div class="nav-left">
-            <img class="nav-left-img" src="./Assets/Symbol.png" alt="" />
-          </div>
-          <div id="mySidenav" class="nav-right">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-              <img class="closebtn-img" src="./Assets/close.png" alt="" />
-            </a>
-            <ul class="nav-right-list">
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./index.html">Home</a>
-              </li>
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./Pages/event.html"
-                  >Events</a
-                >
-              </li>
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./Pages/workshops.html"
-                  >Workshops</a
-                >
-              </li>
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./Pages/team.html">Team</a>
-              </li>
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./Pages/about.html"
-                  >About Us</a
-                >
-              </li>
-              <li class="nav-right-list-items">
-                <a class="nav-right-list-items" href="./Pages/contact.html"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="nav-toggle" onclick="openNav()">
-            <img class="nav-toggle-img" src="./Assets/ham.png" alt="" />
-          </div>
+    <div class="navigation">
+      <div class="navbar">
+        <div class="nav-left">
+          <img class="nav-left-img" src="./Assets/Symbol.png" alt="" />
         </div>
-        <div class="dash"></div>
-      </div>
-
-
-      <div class="contentHome">
-        <h1 class="wc">Welcome to Logic Loop SGI Club, Where Logic Meets Creativity</h1>
-        <div class="eventCard">
-          <h2 class="cardTitle">Events</h2>
-          <p class="cardPara">Stay tuned for exciting events hosted by our coding club! From hands-on workshops to thrilling hackathons, we're committed to providing opportunities for students to expand their coding skills and connect with like-minded peers. <span id="dots">...</span> <span id="more"> Whether you're a beginner eager to learn the basics or a seasoned programmer looking to tackle complex challenges, our diverse range of events has something for everyone. Keep an eye on our calendar for upcoming dates, and join us as we embark on a journey of innovation and creativity together!</span> <button class="rmBut" onclick="moreTxt()" id="myBtn">Read More</button></p>
-          <a class="cardBut" href="./Pages/event.html">
-            Past Events! ↗️
+        <div id="mySidenav" class="nav-right">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <img class="closebtn-img" src="./Assets/close.png" alt="" />
           </a>
-        </div>
-        <div class="wsCard">
-          <h2 class="cardTitle">Workshops</h2>
-          <p class="cardPara">Stay tuned for exciting events hosted by our coding club! From hands-on workshops to thrilling hackathons, we're committed to providing opportunities for students to expand their coding skills and connect with like-minded peers. <span id="dots2">...</span> <span id="more2">Whether you're a beginner eager to learn the basics or a seasoned programmer looking to tackle complex challenges, our diverse range of events has something for everyone. Keep an eye on our calendar for upcoming dates, and join us as we embark on a journey of innovation and creativity together!</span> <button class="rmBut" onclick="moreTxt2()" id="myBtn2">Read More</button></p>
-          <a class="cardBut">
-            Past Workshops! ↗️
-          </a>
-        </div>
-        <div class="teamCard">
-
-        </div>
-        <div class="aucuCard">
-
-        </div>
-      </div>
-
-
-
-
-
-
-
-
-      <div class="footer">
-        <footer class="footer">
-          <div class="waves">
-            <div class="wave" id="wave1"></div>
-            <div class="wave" id="wave2"></div>
-            <div class="wave" id="wave3"></div>
-            <div class="wave" id="wave4"></div>
-          </div>
-          <ul class="social-icon">
-            <li class="social-icon__item"><a class="social-icon__link" href="https://www.linkedin.com/company/logic-loop-sgi" target="_blank">
-                <ion-icon name="logo-linkedin"></ion-icon>
-              </a></li>
-            <li class="social-icon__item"><a class="social-icon__link" target="_blank" href="https://www.instagram.com/logic.loop_sgi/">
-                <ion-icon name="logo-instagram"></ion-icon>
-              </a></li>
+          <ul class="nav-right-list">
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./index.html">Home</a>
+            </li>
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./Pages/event.html"
+                >Events</a
+              >
+            </li>
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./Pages/workshops.html"
+                >Workshops</a
+              >
+            </li>
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./Pages/team.html">Team</a>
+            </li>
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./Pages/about.html"
+                >About Us</a
+              >
+            </li>
+            <li class="nav-right-list-items">
+              <a class="nav-right-list-items" href="./Pages/contact.html"
+                >Contact Us</a
+              >
+            </li>
           </ul>
-          <p>&copy;2024 Logic Loop SGI | All Rights Reserved</p>
-          <h6 class="dev">-Developed by <a class="dev" target="_blank" href="https://atharv-28.github.io/PixelPulse/">Atharv Mayur Tambekar</a> </h6>
-        </footer>
-      </div> 
-      <script src="./Scripts/moreTxt.js"></script>
+        </div>
+        <div class="nav-toggle" onclick="openNav()">
+          <img class="nav-toggle-img" src="./Assets/ham.png" alt="" />
+        </div>
+      </div>
+      <div class="dash"></div>
+    </div>
+
+    <div class="contentHome">
+      <h1 class="wc">
+        Welcome to Logic Loop SGI Club, Where Logic Meets Creativity...
+      </h1>
+      <div class="eventCard">
+        <h2 class="cardTitle">Events</h2>
+        <p class="cardPara">
+          Stay tuned for exciting events hosted by our coding club! From
+          hands-on workshops to thrilling hackathons, we're committed to
+          providing opportunities for students to expand their coding skills and
+          connect with like-minded peers. <span id="dots">...</span>
+          <span id="more">
+            Whether you're a beginner eager to learn the basics or a seasoned
+            programmer looking to tackle complex challenges, our diverse range
+            of events has something for everyone. Keep an eye on our calendar
+            for upcoming dates, and join us as we embark on a journey of
+            innovation and creativity together!</span
+          >
+          <button class="rmBut" onclick="moreTxt()" id="myBtn">
+            Read More
+          </button>
+        </p>
+        <a class="cardBut" href="./Pages/event.html"> Past Events! ↗️ </a>
+      </div>
+      <div class="wsCard">
+        <h2 class="cardTitle">Workshops</h2>
+        <p class="cardPara">
+          Stay tuned for exciting events hosted by our coding club! From
+          hands-on workshops to thrilling hackathons, we're committed to
+          providing opportunities for students to expand their coding skills and
+          connect with like-minded peers. <span id="dots2">...</span>
+          <span id="more2"
+            >Whether you're a beginner eager to learn the basics or a seasoned
+            programmer looking to tackle complex challenges, our diverse range
+            of events has something for everyone. Keep an eye on our calendar
+            for upcoming dates, and join us as we embark on a journey of
+            innovation and creativity together!</span
+          >
+          <button class="rmBut" onclick="moreTxt2()" id="myBtn2">
+            Read More
+          </button>
+        </p>
+        <a class="cardBut"> Past Workshops! ↗️ </a>
+      </div>
+      <div class="teamCard"></div>
+      <div class="aucuCard"></div>
+    </div>
+
+    <div class="footer">
+      <footer class="footer">
+        <div class="waves">
+          <div class="wave" id="wave1"></div>
+          <div class="wave" id="wave2"></div>
+          <div class="wave" id="wave3"></div>
+          <div class="wave" id="wave4"></div>
+        </div>
+        <ul class="social-icon">
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              href="https://www.linkedin.com/company/logic-loop-sgi"
+              target="_blank"
+            >
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+          <li class="social-icon__item">
+            <a
+              class="social-icon__link"
+              target="_blank"
+              href="https://www.instagram.com/logic.loop_sgi/"
+            >
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+        </ul>
+        <p>&copy;2024 Logic Loop SGI | All Rights Reserved</p>
+        <h6 class="dev">
+          -Developed by
+          <a
+            class="dev"
+            target="_blank"
+            href="https://atharv-28.github.io/PixelPulse/"
+            >Atharv Mayur Tambekar</a
+          >
+        </h6>
+      </footer>
+    </div>
+    <script src="./Scripts/reveal.js"></script>
+    <script src="./Scripts/moreTxt.js"></script>
     <script src="./Scripts/sidePanel.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
