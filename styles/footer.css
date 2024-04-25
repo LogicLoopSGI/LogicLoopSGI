@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap");
 
-
 .footer {
-    bottom: 0;
-  position: fixed;
+  bottom: 0;
+  position: relative;
   width: 100%;
   background: #3586ff;
   min-height: 100px;
-  padding: 20px;
+  padding: 20px 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -15,17 +14,16 @@
   flex-wrap: nowrap;
 }
 
-.dev{
-    font-size: 1rem;
-    font-weight: normal;
-    color: #fff;
-    text-decoration: none;
+.dev {
+  font-size: 1rem;
+  font-weight: normal;
+  color: #fff;
+  text-decoration: none;
 }
 
-.social-icon{
-    display: flex;
+.social-icon {
+  display: flex;
 }
-
 
 .social-icon__item {
   list-style: none;
@@ -67,9 +65,9 @@
 
 .wave {
   position: absolute;
-  top: -70px;
+  top: -85px;
   left: 0;
-  width: 100%;
+  width: 100vw;
   height: 70px;
   background: url("https://i.ibb.co/wQZVxxk/wave.png");
   background-size: 1000px 100px;
@@ -102,7 +100,6 @@
   bottom: 20px;
   animation: animate 3s linear infinite;
 }
-
 
 @keyframes animateWaves {
   0% {
