@@ -14,11 +14,6 @@
   font-weight: bold;
 }
 
-.eventSelector select option:checked {
-    background-color: white;
-    color: white;
-}
-
 
 #eventHeading{
     color: #3586ff;
