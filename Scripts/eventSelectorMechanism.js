@@ -1,9 +1,9 @@
 const events = {
     event1: {
         heading: "Event 1",
-        img1: "image1.jpg",
-        img2: "image2.jpg",
-        img3: "image3.jpg",
+        img1: "https://th.bing.com/th/id/OIP.UHbAF6yPon33W3A03yO47wHaFj?w=213&h=180&c=7&r=0&o=5&pid=1.7",
+        img2: "https://th.bing.com/th/id/OIP.E4IJcali_762Oo_vNhhbFgHaEK?w=272&h=180&c=7&r=0&o=5&pid=1.7",
+        img3: "https://th.bing.com/th/id/OIP.0iqvqUM-_MntTZp4CMBaigHaEK?w=282&h=180&c=7&r=0&o=5&pid=1.7",
         para1heading: "Paragraph 1 Heading",
         para1details: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
         para2heading: "Paragraph 2 Heading",
@@ -34,15 +34,38 @@ function populateEventDetails(selectedEvent) {
     const eventHeading = document.getElementById('eventHeading');
     const imageSlider = document.getElementById('imageSlider');
     const eventDetails = document.getElementById('eventDetails');
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
 
     eventHeading.textContent = event.heading;
 
     // Populate image slider
-    imageSlider.innerHTML = `
-        <img src="${event.img1}" alt="Image 1">
-        <img src="${event.img2}" alt="Image 2">
-        <img src="${event.img3}" alt="Image 3">
-    `;
+    let imageIndex = 1;
+
+    function showImage(index) {
+        imageSlider.style.backgroundImage = `url('${event[`img${index}`]}')`;
+    }
+
+    function slideNext() {
+        imageIndex++;
+        if (imageIndex > 3) {
+            imageIndex = 1;
+        }
+        showImage(imageIndex);
+    }
+
+    function slidePrev() {
+        imageIndex--;
+        if (imageIndex < 1) {
+            imageIndex = 3;
+        }
+        showImage(imageIndex);
+    }
+
+    eventHeading.textContent = event.heading;
+    showImage(imageIndex);
+    prevButton.addEventListener('click', slidePrev);
+    nextButton.addEventListener('click', slideNext);
 
     // Populate event details
     eventDetails.innerHTML = `
