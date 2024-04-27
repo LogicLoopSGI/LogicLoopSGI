@@ -25,6 +25,9 @@
   width: 100%;
 }
 
+.nav-right-list-items:active{
+  /* border-bottom: 2px solid #3586ff; */
+}
 
 
 

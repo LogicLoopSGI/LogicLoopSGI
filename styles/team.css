@@ -9,7 +9,7 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 }
 
 /* Styles for team member cards */
@@ -23,7 +23,15 @@
     flex-direction: column;
     justify-content: center;
     padding: 10px;
+    border: 2px solid transparent; /* Initially transparent border */
+    transition: box-shadow 0.9s ease; 
 }
+
+
+.team-card:hover {
+    box-shadow: 0 0 20px #3586ff;
+    /* border-color: #007bff; Change border color on hover */
+} 
 
 .team-img {
     width: 100%;
@@ -89,3 +97,4 @@
         align-self: center;
     }
 }
+
