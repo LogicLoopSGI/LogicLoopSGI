@@ -203,7 +203,7 @@ function generateTeamDepartments() {
         departmentMembers.forEach(member => {
             const cardHTML = `
                 <div class="team-card">
-                    <img src="${member.imageUrl}" alt="${member.name}" class="team-img">
+                    <img src="${member.imageUrl}" alt="" class="team-img">
                     <div class="team-info">
                         <h2 class="team-name">${member.name}</h2>
                         <p class="team-position">${member.position}</p>
