@@ -1,13 +1,6 @@
 // Team member objects with department information
 const teamMembers = [
     {
-        name: "Neel Gholkar",
-        position: "Monitoring Body",
-        department: "Monitoring Body",
-        imgUrl: "",
-        yearOfStudy: "Diploma TY"
-    },
-    {
         name: "Aditya Patharwat",
         position: "President",
         department: "Management Role",
@@ -100,22 +93,22 @@ const teamMembers = [
     },
     {
         name: "Sarvesh Salunkhe",
-        position: "Community Outreach Coordinator, Alumni Relations Officer",
-        department: "Community Outreach Coordinators",
+        position: "Community Outreach Coordinator",
+        department: "Community Outreach Coordinators, Alumni Relations Officer",
         imgUrl: "",
         yearOfStudy: "Diploma TY"
     },
     {
         name: "Yashshvi Athavale",
         position: "Community Outreach Coordinator",
-        department: "Community Outreach Coordinators",
+        department: "Community Outreach Coordinators, Alumni Relations Officer",
         imgUrl: "",
         yearOfStudy: "Diploma SY"
     },
     {
         name: "Shivani Mali",
         position: "Community Outreach Coordinator",
-        department: "Community Outreach Coordinators",
+        department: "Community Outreach Coordinators, Alumni Relations Officer",
         imgUrl: "",
         yearOfStudy: "B.Tech FY"
     },
@@ -153,7 +146,28 @@ const teamMembers = [
         department: "Management Role",
         imgUrl: "",
         yearOfStudy: "Diploma FY"
-    }
+    },
+    {
+        name: "Neel Gholkar",
+        position: "Monitoring Body",
+        department: "Monitoring Body",
+        imgUrl: "",
+        yearOfStudy: "Diploma TY"
+    },
+    {
+        name: "Atharv Mali",
+        position: "Monitoring Body",
+        department: "Monitoring Body",
+        imgUrl: "",
+        yearOfStudy: "Diploma TY"
+    },
+    {
+        name: "Tiwari Sir",
+        position: "Monitoring Body",
+        department: "Monitoring Body",
+        imgUrl: "",
+        yearOfStudy: "Faculty"
+    },
 ];
 
 
